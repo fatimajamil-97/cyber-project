@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Incident Center | Edmunds Case Study</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+
+    <!-- Top Alert Banner -->
+    <div id="alert-banner" class="bg-red-700 text-white text-center py-2 px-4 text-xs font-bold tracking-wider uppercase animate-pulse">
+        ⚠️ ALERT: Verified System Data Leak Detected - January 24, 2026
+    </div>
+
+    <!-- Header -->
+    <header class="border-b border-slate-800 bg-slate-900/50 p-6">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="text-2xl">🛡️</span>
+                <span class="font-mono text-xl font-black tracking-tight text-white">EDMUNDS<span class="text-red-500">.COM</span> RESEARCH PORTAL</span>
+            </div>
+            <span id="header-badge" class="text-xs bg-red-950 text-red-400 px-3 py-1 rounded font-mono border border-red-800 uppercase tracking-wider">Breach Active</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        
+        <!-- Platform Summary Section -->
+        <section class="mb-12 bg-slate-900 border border-slate-800 rounded-xl p-8 shadow-2xl">
+            <h2 class="text-sm font-mono uppercase tracking-widest text-red-500 mb-2">Target Profile</h2>
+            <h1 class="text-3xl font-bold tracking-tight text-white mb-4">US-Based Car Shopping Platform Compromise</h1>
+            <p class="text-slate-400 max-w-3xl leading-relaxed">
+                Hackers targeted Edmunds.com, a vehicle search and dealer listing platform. The intruders successfully exfiltrated critical user data registries without disrupting or modifying the core enterprise application code.
+            </p>
+        </section>
+
+        <!-- Metrics Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center">
+                <p class="text-xs font-mono uppercase text-slate-500 mb-1">Impacted Records</p>
+                <p class="text-3xl font-black text-red-500 font-mono">~178,000</p>
+            </div>
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center">
+                <p class="text-xs font-mono uppercase text-slate-500 mb-1">Forums Leak Alias</p>
+                <p class="text-2xl font-bold text-purple-400 font-mono">"Wadjet"</p>
+            </div>
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center">
+                <p class="text-xs font-mono uppercase text-slate-500 mb-1">Breach Source</p>
+                <p id="mitigation-status-text" class="text-base font-bold text-amber-500 mt-2 font-mono">Vendor Bug & Social Engineering</p>
+            </div>
+        </div>
+
+        <!-- Attack Vectors & Interactive Control Panel Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+            
+            <!-- Left 2 Columns: Attack Description -->
+            <div class="lg:col-span-2 space-y-6">
+                <h2 class="text-lg font-bold text-white border-l-4 border-red-500 pl-3">Double Threat Attack Methods</h2>
+                
+                <!-- Vishing Vector -->
+                <div class="bg-slate-900 p-5 border border-slate-800 rounded-xl">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-amber-400 font-bold font-mono">📞 1. Vishing Attack (Voice Phishing)</h3>
+                        <span class="text-[10px] bg-amber-950 text-amber-400 border border-amber-800 px-2 py-0.5 rounded uppercase font-mono">Admin Action Required</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-3">
+                        Cybercriminals made strategic phone calls to internal employees, masquerading as corporate IT helpdesk agents. They successfully manipulated workers into volunteering administrative access credentials.
+                    </p>
+                    <p class="text-xs text-slate-500 font-mono italic">
+                        *Note: Social engineering targets human behavior. It cannot be resolved via automated software patches and requires ongoing offline staff awareness training.
+                    </p>
+                </div>
+
+                <!-- Supply Chain Vector -->
+                <div id="vector-supply-chain" class="bg-slate-900 p-5 border border-slate-800 rounded-xl">
+                    <h3 id="vector-supply-title" class="text-red-400 font-bold mb-2 font-mono">🔗 2. Supply Chain Attack (VULNERABLE)</h3>
+                    <p id="vector-supply-desc" class="text-slate-400 text-sm leading-relaxed">
+                        Simultaneously, the threat group located and exploited an unpatched security bug lurking inside an integrated third-party tool software system ecosystem.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Column: CONTROL MODULE WITH DATABASE ENGINE -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 h-fit shadow-lg">
+                <h3 class="text-sm font-mono text-slate-400 uppercase tracking-widest mb-2">⚡ Incident Control Panel</h3>
+                <p class="text-xs text-slate-400 mb-4">Simulate how a security operations center isolates a live breach vector.</p>
+                
+                <!-- Direct Database Trigger Button -->
+                <button onclick="applyMitigationAndSave()" id="patch-btn" class="w-full bg-red-600 hover:bg-red-700 text-white font-mono text-xs font-bold py-3 px-4 rounded-lg uppercase tracking-wider shadow-lg shadow-red-900/40">
+                    Execute Emergency Patch
+                </button>
+
+                <div class="mt-6 pt-4 border-t border-slate-800">
+                    <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">🗃️ Exposed Data Ledger</h4>
+                    <ul class="space-y-2 text-xs text-slate-300 font-mono">
+                        <li class="flex items-center space-x-2"><span class="text-red-500">🛑</span> <span>Usernames & Emails</span></li>
+                        <li class="flex items-center space-x-2"><span class="text-red-500">🛑</span> <span>Account Passwords</span></li>
+                        <li class="flex items-center space-x-2"><span class="text-red-500">🛑</span> <span>Phone & IP Logs</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-20 border-t border-slate-800 bg-slate-950 py-8 text-center text-xs font-mono text-slate-500 flex flex-col items-center space-y-4">
+        <p>🛡️ Core Defense: Prevent with preparation, 2FA, and updates. Isolate, patch, and reset fast if hit.</p>
+        <!-- Database Maintenance Button -->
+        <button onclick="resetDatabase()" class="bg-slate-900 hover:bg-slate-800 text-slate-400 px-3 py-1 rounded border border-slate-800 text-[10px] uppercase tracking-wider">
+            🔄 Reset Database State
+        </button>
+    </footer>
+
+    <!-- PERSISTENT BACKEND STORAGE CODE -->
+    <script>
+        // Function 1: Executes modifications and saves status directly to internal browser memory 
+        function applyMitigationAndSave() {
+            // Save state to browser's backend memory allocation 
+            localStorage.setItem('edmunds_breach_status', 'SECURED');
+            
+            // Execute layout rendering swap
+            renderSecuredUI();
+        }
+
+        // Function 2: Holds structural update rules
+        function renderSecuredUI() {
+            document.getElementById('alert-banner').innerText = '✅ DEFENSES ACTIVATED: PLATFORM ISOLATED';
+            document.getElementById('alert-banner').className = 'bg-emerald-600 text-white text-center py-2 px-4 text-xs font-bold tracking-wider uppercase';
+            
+            document.getElementById('header-badge').innerText = 'Threat Contained';
+            document.getElementById('header-badge').className = 'text-xs bg-emerald-950 text-emerald-400 px-3 py-1 rounded font-mono border border-emerald-800 uppercase tracking-wider';
+            
+            document.getElementById('mitigation-status-text').innerText = 'Vulnerability Patched';
+            document.getElementById('mitigation-status-text').className = 'text-base font-bold text-emerald-400 mt-2 font-mono';
+            
+            document.getElementById('vector-supply-title').innerText = '🔗 2. Supply Chain Attack (RESOLVED)';
+            document.getElementById('vector-supply-title').className = 'text-emerald-400 font-bold mb-2 font-mono';
+            
+            document.getElementById('vector-supply-desc').innerText = 'Vulnerability Closed: Third-party software tool instances successfully updated and verified secure by operations team.';
+            
+            const btn = document.getElementById('patch-btn');
+            btn.innerText = 'System Fully Secured';
+            btn.className = 'w-full bg-emerald-700 text-white font-mono text-xs font-bold py-3 px-4 rounded-lg cursor-not-allowed uppercase tracking-wider';
+            btn.disabled = true;
+        }
+
+        // Function 3: Clears memory registry configuration 
+        function resetDatabase() {
+            localStorage.removeItem('edmunds_breach_status');
+            window.location.reload(); // reload display frame
+        }
+
+        // Boot-Up Sequence: Run check against database storage array during frame compilation
+        window.onload = function() {
+            const currentDbState = localStorage.getItem('edmunds_breach_status');
+            if (currentDbState === 'SECURED') {
+                renderSecuredUI(); // Auto-apply changes if backend says secured
+            }
+        };
+    </script>
+
+</body>
+</html>
